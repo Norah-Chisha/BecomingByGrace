@@ -1,0 +1,161 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F6F5EF;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* HERO / HEADER */
+header {
+    background: #E1E6C6; /* pale olive */
+    text-align: center;
+    padding: 80px 20px 30px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #08525B; /* deep teal */
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #465233; /* soft olive for subtitle */
+}
+
+/* NAVIGATION */
+nav {
+    background: #08525B;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F6F5EF;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #D4A857; /* soft gold hover */
+}
+
+/* MAIN CONTENT */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #08525B;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-size: 18px;
+    color: #444;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* BLOG POSTS */
+.post-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    max-width: 700px;
+    transition: transform 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card h3 {
+    color: #08525B;
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    color: #555;
+}
+
+.post-card a {
+    text-decoration: none;
+    color: #D4A857;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.post-card a:hover {
+    text-decoration: underline;
+}
+
+/* CONTACT FORM */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    background: #08525B;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #063f46;
+}
+
+/* FOOTER */
+footer {
+    background: #08525B;
+    color: #F6F5EF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}

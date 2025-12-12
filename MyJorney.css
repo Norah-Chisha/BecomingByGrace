@@ -1,0 +1,180 @@
+/* General Body Styling */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #08525B; /* Deep teal */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    color: #E1E6C6; /* Pale olive */
+    transform: scale(1.05);
+}
+
+/* Blog Post Container */
+.blog-post {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Section Headings */
+.blog-post header h1 {
+    font-size: 2.5em;
+    color: #08525B; /* Deep teal */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blog-post section h2 {
+    font-size: 1.8em;
+    color: #08525B;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.blog-post section h3 {
+    font-size: 1.4em;
+    color: #0A7B83; /* lighter teal */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.blog-post p {
+    font-size: 1.05em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Blockquotes for Scripture */
+.blog-post blockquote {
+    font-style: italic;
+    background-color: #f0f4d1; /* lighter pale olive */
+    border-left: 5px solid #08525B;
+    padding: 10px 20px;
+    margin: 15px 0;
+    color: #08525B;
+    transition: transform 0.2s;
+}
+
+.blog-post blockquote:hover {
+    transform: scale(1.02);
+}
+
+/* Unordered Lists */
+.blog-post ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-post ul li {
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.blog-post ul li:hover {
+    color: #08525B;
+}
+
+/* Footer Styling */
+.blog-post footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+    .blog-post {
+        padding: 20px 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-post {
+        padding: 15px 20px;
+        margin: 20px;
+    }
+
+    .blog-post header h1 {
+        font-size: 2em;
+    }
+
+    .blog-post section h2 {
+        font-size: 1.5em;
+    }
+
+    .blog-post section h3 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .blog-post {
+        padding: 10px 15px;
+    }
+
+    .blog-post header h1 {
+        font-size: 1.7em;
+    }
+
+    .blog-post section h2 {
+        font-size: 1.3em;
+    }
+
+    .blog-post section h3 {
+        font-size: 1.1em;
+    }
+
+    .blog-post p, .blog-post ul li {
+        font-size: 1em;
+    }
+}
